@@ -9,12 +9,14 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^7.2"
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/collections": "^8.33"
     },
     "autoload": {
         "files": [
             "src/Load.php",
-            "src/Storage.php"
+            "src/Storage.php",
+            "src/Stat.php"
         ]
     }
 }

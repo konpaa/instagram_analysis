@@ -1,0 +1,16 @@
+#!/usr/bin/php
+<?php
+
+use function instagramPhp\Stat\getUserStat;
+
+require_once __DIR__ . "/../vendor/autoload.php";
+
+if (empty($argv[1])) {
+    echo "Empty username argument.\n";
+    echo "Usage: stat <username>\n";
+    exit(1);
+}
+
+$username = $argv[1];
+$stat = getUserStat($username);
+print_r($stat);
