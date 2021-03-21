@@ -1,6 +1,8 @@
 #!/usr/bin/php
 <?php
 
+use function instagramPhp\Load\loadRemoteUserData;
+
 require_once __DIR__ . "/../vendor/autoload.php";
 
 if (empty($argv[1])) {
@@ -10,4 +12,5 @@ if (empty($argv[1])) {
 }
 
 $username = $argv[1];
-loadRemoteUserData($username);
+$fullPath = loadRemoteUserData($username);
+echo "Data has ben stored to {$fullPath} \n";
