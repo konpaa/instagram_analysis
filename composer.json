@@ -1,0 +1,12 @@
+{
+    "name": "pavel/instagram-php",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konpa",
+            "email": "pavelkonoplyanikov@yandex.by"
+        }
+    ],
+    "require": {}
+}
